@@ -2,9 +2,11 @@
   "name": "atcoder-browser",
   "version": "1.0.0",
   "description": "Atcoder専用ブラウザです",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run build && electron src"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/hotman78/atcoder-browser/issues"
   },
-  "homepage": "https://github.com/hotman78/atcoder-browser#readme"
+  "homepage": "https://github.com/hotman78/atcoder-browser#readme",
+  "dependencies": {
+    "electron": "^12.0.6",
+    "electron-reload": "^1.5.0",
+    "electron-tabs": "^0.15.0"
+  }
 }
